@@ -1,0 +1,141 @@
+<html>
+
+<head>
+  <bg img="buy now bg.jpg">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  body {
+    background-image: url("creditcard1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: poppins;
+  }
+
+  h1 {
+    font-size: 70px;
+    margin-bottom: 0px;
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    width: 230px;
+  }
+
+  input:focus{
+    border: 4px solid lightskyblue;
+  }
+
+  select{
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    width: 230px;
+  }
+
+  form {
+    margin-left: 18px;
+  }
+
+  a{
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+</style>
+
+</head>
+
+<body>
+  <center>
+    <h1>Please Fill The Form For Purchasing</h1>
+  </center>
+
+<pre>
+<div class="form">
+
+<form method="post">
+<font size="5">
+
+First Name:
+<input type="text" name="fname" placeholder="Enter first name"><br>
+ 
+Last Name:
+<input type="text" name="lname" placeholder="Enter last name"><br>
+
+Address:
+<input type="text" name="Address" placeholder="Enter Address Here"><br>
+
+E-mail:
+<input type="text" name="Email" placeholder="Enter Your Email Here"><br>
+
+Mobile No.:
+<input type="text" name="Mobile" placeholder="Enter Your Mobile No. Here"><br>
+
+Payment Options:
+<Select id="UPI" onchange=run();>
+<option value="1">Card</option>
+<option value="2">COD</option>
+<option value="3">UPI</option>
+</Select>
+
+<div id="qr"></div>
+
+<input type="Submit" value="Submit" onclick="ask();" style="background-color:darkcyan;color:white">
+
+
+<h4><a href="home.html">Go to Home page</a></h4>
+
+</font>
+
+
+</div>
+</form>
+</pre>
+
+<script>
+  function ask()
+      {
+    if (confirm("Are you sure you want to proceed")) {
+      alert('Your Order Has Been Placed. \nThanks For Purchasing');
+    }
+    else {
+      alert('You pressed cancel');
+    }
+  }
+
+
+
+  function run()
+  {
+    var value=document.getElementById("UPI").value
+    if (value=="3")
+        document.getElementById("qr").innerHTML='<img src="qr.webp" height="210px" width="200px">'
+    else
+        document.getElementById("qr").innerHTML=""
+  }
+  </script>
+
+</body>
+</html>

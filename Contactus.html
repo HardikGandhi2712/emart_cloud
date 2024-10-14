@@ -1,0 +1,162 @@
+<html>
+
+<head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body {
+            background-color: black;
+            font-family: poppins;
+        }
+
+        .navbar {
+            border-radius: 80px;
+            padding: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 100px;
+        }
+
+        .navbar ul {
+            text-align: right;
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            margin: 20px;
+            margin-top: 40px;
+
+        }
+
+        .navbar li {
+            margin: 20px;
+            display: inline;
+        }
+
+        .navbar li a:hover {
+            color: aqua;
+            border-bottom: red solid 4px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo {
+            height: 170px;
+            width: 180px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        .list {
+            width: 1721px;
+            float: left;
+            background-color: white;
+            height: fit-content;
+        }
+
+        .slide {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        fieldset {
+            background-color:#eeeeee;
+        }
+
+        legend {
+            background-color: gray;
+            color: white;
+            padding: 5px 10px;
+        }
+        
+        input{
+                padding:5px;
+                border-radius:5px;
+            }
+
+        textarea{
+                padding:5px;
+                border-radius:5px;
+                border: 2px solid black;
+                border-style: inset;
+            }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar">
+            <img src="lo.jpeg" class="logo" align="left">
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Mobiles.html">Mobiles</a></li>
+                <li><a href="Laptops.html">Laptops</a></li>
+                <li><a href="Televisions.html">Televisions</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="list">
+        <h1 align="center">For Any Query, Contact us</h1>
+
+        <div class="slide">
+            <pre>
+<form method="post">
+<font size="5">
+
+<fieldset>
+
+    <legend>Contact Us</legend>
+
+<label for="fname">First Name:</label>
+<input type="text" id="fname" name="fname" placeholder="Enter first name" required><br>
+
+Last Name:
+<input type="text" name="lname" placeholder="Enter last name"><br>
+
+E-mail:
+<textarea cols="100" placeholder="Enter Your Email" required></textarea><br>
+
+Mobile no.:
+<input type="mob" name="Mobile number" pattern="[0-9]{2}-[0-9]{10}" placeholder="xx-xxxxxxxxxx" required><br>
+
+</fieldset>
+
+<fieldset>
+
+    <legend>Message Us</legend>
+
+Select The Type Of Message:<br>
+<input type="radio" name="msgtype" value="Query">Query
+<input type="radio" name="msgtype" value="Feedback">Feedback<br>
+
+Write Your Message:
+<textarea rows="4" cols="50" name="address"></textarea>
+
+<input type="Submit" value="Submit" onclick="alert('Your form has been successfully submitted.We will reach out to you soon')">
+
+</fieldset>
+</font>
+
+
+
+</form>
+</pre>
+        </div>
+</body>
+
+</html>

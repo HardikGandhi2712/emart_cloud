@@ -7,5 +7,5 @@ COPY . /usr/share/nginx/html
 # Copy the custom NGINX configuration
 COPY default.conf /etc/nginx/conf.d/default.conf
 
-# Expose port 80
-EXPOSE 80
+# Expose port 4002
+EXPOSE 4002
